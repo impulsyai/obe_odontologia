@@ -107,19 +107,19 @@
 
         /* 💎 Authority Badge TEA */
         .tea-badge {
-            background: linear-gradient(135deg, #C4A265 0%, #A68343 100%);
-            color: white;
-            padding: 12px 20px;
+            background-color: rgba(196, 162, 101, 0.1);
+            color: #A68343;
+            padding: 8px 20px;
             border-radius: 100px;
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            box-shadow: 0 10px 20px rgba(196, 162, 101, 0.2);
-            font-size: 11px;
-            font-weight: bold;
+            font-size: 10px;
+            font-weight: 900;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            letter-spacing: 0.15em;
+            border: 1.5px solid rgba(196, 162, 101, 0.3);
+            margin-bottom: 24px;
         }
 
         /* 💎 Typography Polish */
@@ -745,8 +745,8 @@
                     <div class="text-brand-rose font-bold tracking-widest uppercase text-sm mb-4">Atendimento Especializado</div>
                     
                     <!-- Authority Badge TEA -->
-                    <div class="tea-badge mb-6">
-                        <i class="ph-fill ph-puzzle-piece text-xl"></i>
+                    <div class="tea-badge">
+                        <i class="ph-fill ph-puzzle-piece text-lg"></i>
                         Referência em Autismo (TEA)
                     </div>
 
@@ -817,9 +817,11 @@
                         </div>
                     </div>
 
-                    <a href="https://wa.me/557196593529?text=Olá, gostaria de agendar uma avaliação estética." target="_blank" class="btn-gold px-8 py-4 rounded-full text-center uppercase tracking-wider font-bold shadow-xl inline-block">
-                        Agendar Avaliação Estética
-                    </a>
+                    <div class="flex justify-center md:justify-start">
+                        <a href="https://wa.me/557196593529?text=Olá, gostaria de agendar uma avaliação estética." target="_blank" class="btn-gold px-10 py-4 rounded-full text-center uppercase tracking-wider font-bold shadow-xl inline-block">
+                            Agendar Avaliação Estética
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Imagem -->
@@ -1369,14 +1371,10 @@
     <!-- TRATAMENTOS GERAIS LIST -->
     <section id="clinico" class="py-24 bg-[#F5EDE4]">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gsap-fade-up">
-                <div>
-                    <h2 class="font-serif text-4xl font-bold text-brand-dark mb-4">Estrutura Completa</h2>
-                    <p class="text-brand-muted max-w-xl">Na OBE, você encontra todas as especialidades odontológicas em um só lugar, com equipamentos de ponta e infraestrutura pensada no seu conforto.</p>
-                </div>
-                <div class="mt-6 md:mt-0">
-                    <a href="https://wa.me/557196593529?text=Olá! Vi os tratamentos no site e gostaria de solicitar um orçamento clínico." target="_blank" class="btn-gold px-6 py-3 rounded-full text-sm uppercase tracking-wider font-bold">Solicitar Orçamento</a>
-                </div>
+            <div class="text-center mb-16 gsap-fade-up">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-brand-dark mb-4">Estrutura Completa</h2>
+                <p class="text-brand-muted max-w-2xl mx-auto text-lg mb-8">Na OBE, você encontra todas as especialidades odontológicas em um só lugar, com equipamentos de ponta e infraestrutura pensada no seu conforto.</p>
+                <a href="https://wa.me/557196593529?text=Olá! Vi os tratamentos no site e gostaria de solicitar um orçamento clínico." target="_blank" class="btn-gold px-10 py-4 rounded-full text-sm uppercase tracking-wider font-bold inline-block shadow-lg">Solicitar Orçamento</a>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 gsap-fade-up" id="procedures-grid">
@@ -1537,10 +1535,9 @@
             </div>
 
             <!-- Bottom Footer -->
-            <div class="border-t border-brand-gold/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                <div class="flex items-center gap-2">
-                    <i class="ph ph-tooth text-2xl text-brand-gold"></i>
-                    <span class="font-serif font-bold text-brand-dark">OBE Odontologia</span>
+            <div class="border-t border-brand-gold/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="h-16">
+                    <img src="assets/img/logo nova.png" alt="OBE Odontologia" class="h-full w-auto object-contain">
                 </div>
                 <p class="text-sm text-brand-muted">© 2026 OBE Odontologia. Todos os direitos reservados.</p>
                 <div class="flex gap-4">
