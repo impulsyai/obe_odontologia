@@ -16,7 +16,7 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💎</text></svg>">
     
     <!-- LCP Preload -->
-    <link rel="preload" href="assets/img/hero-maior.webp" as="image" fetchpriority="high">
+    <link rel="preload" href="assets/img/heronova.jpg" as="image" fetchpriority="high">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -137,10 +137,10 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
         }
         .nav-inner {
-            height: 85px;
+            height: 80px;
         }
         @media (min-width: 768px) {
-            .nav-inner { height: 110px; }
+            .nav-inner { height: 100px; }
         }
 
         /* Nav Link Active State */
@@ -468,8 +468,8 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="flex justify-between items-center nav-inner">
                 <!-- Logo -->
-                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo(0,0)">
-                    <img src="assets/img/logo nova.png" alt="OBE Odontologia" class="h-16 md:h-22 w-auto object-contain">
+                <div class="flex-shrink-0 flex items-center h-full cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <img src="assets/img/logo nova.png" alt="OBE Odontologia" class="h-full w-auto object-contain">
                 </div>
 
                 <!-- Desktop Menu -->
@@ -479,6 +479,7 @@
                     <a href="#resultados" class="nav-link text-[11px] uppercase tracking-widest text-brand-dark hover:text-brand-gold transition-colors font-bold whitespace-nowrap">Resultados</a>
                     <a href="#equipe" class="nav-link text-[11px] uppercase tracking-widest text-brand-dark hover:text-brand-gold transition-colors font-bold whitespace-nowrap">Corpo Clínico</a>
                     <a href="#clinico" class="nav-link text-[11px] uppercase tracking-widest text-brand-dark hover:text-brand-gold transition-colors font-bold whitespace-nowrap">Tratamentos</a>
+                    <a href="#galeria" class="nav-link text-[11px] uppercase tracking-widest text-brand-dark hover:text-brand-gold transition-colors font-bold whitespace-nowrap">Galeria</a>
                     
                     <a href="https://wa.me/message/PMRYCVEM2PHOO1" target="_blank" class="btn-gold px-7 py-3.5 rounded-full text-[11px] uppercase tracking-widest font-bold shadow-lg ml-2 whitespace-nowrap">
                         Agendar Consulta
@@ -507,6 +508,7 @@
             <a href="#resultados" class="nav-link text-2xl uppercase tracking-widest text-brand-dark font-bold mobile-link">Resultados</a>
             <a href="#equipe" class="nav-link text-2xl uppercase tracking-widest text-brand-dark font-bold mobile-link">Corpo Clínico</a>
             <a href="#clinico" class="nav-link text-2xl uppercase tracking-widest text-brand-dark font-bold mobile-link">Tratamentos</a>
+            <a href="#galeria" class="nav-link text-2xl uppercase tracking-widest text-brand-dark font-bold mobile-link">Galeria</a>
         </div>
         <a href="https://wa.me/message/PMRYCVEM2PHOO1" target="_blank" class="btn-gold px-10 py-5 rounded-full text-xl uppercase tracking-wider font-bold shadow-2xl w-full max-w-xs text-center">
             Agendar Consulta
@@ -515,7 +517,7 @@
 
 
     <!-- HERO SECTION -->
-    <section class="relative min-h-[95vh] flex items-center pt-28 md:pt-40 overflow-hidden">
+    <section class="relative min-h-[95vh] flex items-center pt-24 md:pt-32 overflow-hidden">
         <!-- Background Decorativo -->
         <div class="absolute top-0 right-0 w-1/2 h-full bg-brand-rose opacity-10 rounded-l-full blur-3xl transform translate-x-1/3"></div>
         <div class="absolute bottom-0 left-0 w-1/3 h-1/2 bg-brand-gold opacity-10 rounded-tr-full blur-3xl transform -translate-x-1/2"></div>
@@ -626,7 +628,7 @@
             <div class="relative gsap-hero-img h-[600px] w-full hidden md:block">
                 <!-- Imagem Principal (Atendimento humanizado) -->
                 <div class="absolute top-0 right-0 w-4/5 h-[500px] rounded-[40px] overflow-hidden shadow-2xl z-10">
-                    <img src="assets/img/hero-maior.webp" alt="Atendimento Odontológico OBE" class="w-full h-full object-cover ken-burns" fetchpriority="high">
+                    <img src="assets/img/heronova.jpg" alt="Atendimento Odontológico OBE" class="w-full h-full object-cover ken-burns" fetchpriority="high">
                 </div>
                 <!-- Imagem Secundária (Detalhe Estético / Sorriso) -->
                 <div class="absolute bottom-0 left-0 w-2/3 h-[300px] rounded-[40px] border-8 border-[#F5EDE4] overflow-hidden shadow-xl z-20">
@@ -1405,6 +1407,59 @@
     </section>
 
     <!-- LOCATION & FOOTER -->
+
+    <!-- 💎 GALLERY SECTION (CONHEÇA NOSSO ESPAÇO) -->
+    <section id="galeria" class="py-24 bg-[#F5EDE4]">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="font-serif italic text-brand-muted text-lg block mb-2">A Clínica</span>
+                <h2 class="font-serif text-3xl md:text-5xl font-bold text-brand-dark mb-6">Seu Espaço de Transformação</h2>
+                <div class="w-12 h-[1px] bg-brand-gold mx-auto mb-8"></div>
+                <p class="text-brand-muted max-w-2xl mx-auto text-lg leading-relaxed">
+                    Ambiente planejado para seu conforto, segurança e bem-estar.
+                </p>
+            </div>
+
+            <!-- Bento Grid Gallery -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 h-auto md:h-[900px]">
+                <!-- Large Vertical Item -->
+                <div class="md:col-span-4 md:row-span-2 group relative overflow-hidden rounded-[40px] shadow-lg">
+                    <img src="assets/img/clinica/clinica-1.jpg" alt="Ambiente OBE" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-brand-dark/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+                
+                <!-- Top Medium Item -->
+                <div class="md:col-span-5 md:row-span-1 group relative overflow-hidden rounded-[40px] shadow-lg">
+                    <img src="assets/img/clinica/clinica-2.jpg" alt="Recepção OBE" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-brand-dark/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+
+                <!-- Top Right Item -->
+                <div class="md:col-span-3 md:row-span-1 group relative overflow-hidden rounded-[40px] shadow-lg">
+                    <img src="assets/img/clinica/clinica-3.jpg" alt="Sala de Atendimento" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-brand-dark/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+
+                <!-- Middle Medium Item (Bottom Right Wide) -->
+                <div class="md:col-span-8 md:row-span-1 group relative overflow-hidden rounded-[40px] shadow-lg">
+                    <img src="assets/img/clinica/clinica-5.jpg" alt="Consultório" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-brand-dark/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                </div>
+
+                <!-- Final Bottom Row (Optional for more photos) -->
+                <div class="md:col-span-4 group relative overflow-hidden rounded-[40px] shadow-lg h-[250px] md:h-auto">
+                    <img src="assets/img/clinica/clinica-4.jpg" alt="Tecnologia OBE" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </div>
+                <div class="md:col-span-4 group relative overflow-hidden rounded-[40px] shadow-lg h-[250px] md:h-auto">
+                    <img src="assets/img/clinica/clinica-6.jpg" alt="Conforto OBE" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </div>
+                <div class="md:col-span-4 group relative overflow-hidden rounded-[40px] shadow-lg h-[250px] md:h-auto">
+                    <img src="assets/img/clinica/clinica-7.jpg" alt="Detalhes Clínica" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="bg-white pt-24 pb-10 border-t border-brand-gold/20">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="grid md:grid-cols-2 gap-16 mb-16">
