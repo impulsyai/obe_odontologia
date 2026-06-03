@@ -685,7 +685,7 @@
                 <!-- Imagem -->
                 <div class="relative gsap-slide-right">
                     <div class="aspect-square rounded-[40px] overflow-hidden shadow-2xl relative image-overlay">
-                        <img src="assets/img/team/camila.png" alt="Atendimento Especializado OBE" class="w-full h-full object-cover" loading="lazy">
+                        <img src="assets/img/team/camila.jpg" alt="Atendimento Especializado OBE" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <!-- Badge -->
                     <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-3xl shadow-xl w-64">
@@ -804,9 +804,9 @@
             </div>
 
             <!-- Grid de Resultados -->
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-3 gap-8" id="portfolio-grid">
                 <!-- Caso 1: Harmonização -->
-                <div class="group bg-white rounded-[32px] p-4 shadow-sm border border-brand-gold/10 hover:shadow-xl hover:border-brand-gold/30 transition-shadow transition-colors shimmer-card">
+                <div class="portfolio-card group bg-white rounded-[32px] p-4 shadow-sm border border-brand-gold/10 hover:shadow-xl hover:border-brand-gold/30 transition-shadow transition-colors shimmer-card">
                     <div class="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
                         <img src="assets/img/harmoniza-o.jpg" alt="Antes e Depois Harmonização Facial" class="w-full h-full object-cover filter brightness-90 group-hover:brightness-100 transition-all duration-500" loading="lazy">
                         <div class="absolute bottom-3 left-3 right-3 flex justify-between text-[9px] font-bold uppercase tracking-wider text-white">
@@ -821,7 +821,7 @@
                 </div>
 
                 <!-- Caso 2: Odontopediatria -->
-                <div class="group bg-white rounded-[32px] p-4 shadow-sm border border-brand-gold/10 hover:shadow-xl hover:border-brand-gold/30 transition-shadow transition-colors shimmer-card">
+                <div class="portfolio-card group bg-white rounded-[32px] p-4 shadow-sm border border-brand-gold/10 hover:shadow-xl hover:border-brand-gold/30 transition-shadow transition-colors shimmer-card">
                     <div class="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
                         <img src="assets/img/antes-e-depois-dente-crian-a-nova.webp" alt="Antes e Depois Odontopediatria" class="w-full h-full object-cover filter brightness-90 group-hover:brightness-100 transition-all duration-500" loading="lazy">
                         <div class="absolute top-3 left-3">
@@ -833,12 +833,12 @@
                     </div>
                     <div class="px-2 pb-2">
                         <h4 class="font-bold text-brand-dark text-lg mb-1">Reabilitação Infantil</h4>
-                        <p class="text-sm text-brand-muted">Odontopediatria estética e funcional.</p>
+                        <p class="text-sm text-brand-muted">Odontopediatria estética and funcional.</p>
                     </div>
                 </div>
 
                 <!-- Caso 3: Prótese -->
-                <div class="group bg-white rounded-[32px] p-4 shadow-sm border border-brand-gold/10 hover:shadow-xl hover:border-brand-gold/30 transition-shadow transition-colors shimmer-card">
+                <div class="portfolio-card group bg-white rounded-[32px] p-4 shadow-sm border border-brand-gold/10 hover:shadow-xl hover:border-brand-gold/30 transition-shadow transition-colors shimmer-card">
                     <div class="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
                         <img src="assets/img/protese-dentaria.jpg" alt="Prótese Dentária OBE" class="w-full h-full object-cover filter brightness-90 group-hover:brightness-100 transition-all duration-500" loading="lazy">
                         <div class="absolute top-3 left-3">
@@ -853,6 +853,58 @@
                         <p class="text-sm text-brand-muted">Reabilitação oral completa.</p>
                     </div>
                 </div>
+
+                <!-- Caso 4: Perfiloplastia -->
+                <div class="portfolio-card group bg-white rounded-[32px] p-4 shadow-sm border border-brand-gold/10 hover:shadow-xl hover:border-brand-gold/30 transition-shadow transition-colors shimmer-card hidden">
+                    <div class="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+                        <img src="assets/img/perfiloplastia.jpg" alt="Antes e Depois Perfiloplastia" class="w-full h-full object-cover filter brightness-90 group-hover:brightness-100 transition-all duration-500" loading="lazy">
+                        <div class="absolute bottom-3 left-3 right-3 flex justify-between text-[9px] font-bold uppercase tracking-wider text-white">
+                            <span class="bg-black/40 px-3 py-1 rounded-full backdrop-blur-md">Antes</span>
+                            <span class="bg-brand-gold px-3 py-1 rounded-full shadow-md text-brand-dark">Depois</span>
+                        </div>
+                    </div>
+                    <div class="px-2 pb-2">
+                        <h4 class="font-bold text-brand-dark text-lg mb-1">Perfiloplastia sem Cirurgia</h4>
+                        <p class="text-sm text-brand-muted">Harmonização e definição do perfil facial.</p>
+                    </div>
+                </div>
+
+                <!-- Caso 5: Alinhador -->
+                <div class="portfolio-card group bg-white rounded-[32px] p-4 shadow-sm border border-brand-gold/10 hover:shadow-xl hover:border-brand-gold/30 transition-shadow transition-colors shimmer-card hidden">
+                    <div class="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+                        <img src="assets/img/alinhador.jpg" alt="Antes e Depois Alinhador Invisível" class="w-full h-full object-cover filter brightness-90 group-hover:brightness-100 transition-all duration-500" loading="lazy">
+                        <div class="absolute bottom-3 left-3 right-3 flex justify-between text-[9px] font-bold uppercase tracking-wider text-white">
+                            <span class="bg-black/40 px-3 py-1 rounded-full backdrop-blur-md">Antes</span>
+                            <span class="bg-brand-gold px-3 py-1 rounded-full shadow-md text-brand-dark">Depois</span>
+                        </div>
+                    </div>
+                    <div class="px-2 pb-2">
+                        <h4 class="font-bold text-brand-dark text-lg mb-1">Alinhadores Invisíveis</h4>
+                        <p class="text-sm text-brand-muted">Tratamento ortodôntico moderno e discreto.</p>
+                    </div>
+                </div>
+
+                <!-- Caso 6: Sorriso Gengival -->
+                <div class="portfolio-card group bg-white rounded-[32px] p-4 shadow-sm border border-brand-gold/10 hover:shadow-xl hover:border-brand-gold/30 transition-shadow transition-colors shimmer-card hidden">
+                    <div class="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
+                        <img src="assets/img/sorriso-gengival.jpg" alt="Antes e Depois Sorriso Gengival" class="w-full h-full object-cover filter brightness-90 group-hover:brightness-100 transition-all duration-500" loading="lazy">
+                        <div class="absolute bottom-3 left-3 right-3 flex justify-between text-[9px] font-bold uppercase tracking-wider text-white">
+                            <span class="bg-black/40 px-3 py-1 rounded-full backdrop-blur-md">Antes</span>
+                            <span class="bg-brand-gold px-3 py-1 rounded-full shadow-md text-brand-dark">Depois</span>
+                        </div>
+                    </div>
+                    <div class="px-2 pb-2">
+                        <h4 class="font-bold text-brand-dark text-lg mb-1">Toxina para Sorriso Gengival</h4>
+                        <p class="text-sm text-brand-muted">Harmonização estética funcional do sorriso.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botão Expandir Resultados (Desktop e Mobile) -->
+            <div class="flex justify-center mt-12" id="portfolio-expand-btn-container">
+                <button id="expand-portfolio" class="px-8 py-3.5 rounded-full border border-brand-gold text-brand-gold font-bold text-xs uppercase tracking-widest hover:bg-brand-gold hover:text-white transition-all shadow-md">
+                    Ver Mais Resultados
+                </button>
             </div>
 
             <div class="mt-16 text-center">
@@ -1212,22 +1264,22 @@
                         <h3 class="font-serif text-2xl font-bold text-brand-gold mb-1">Dra. Louise Câmara</h3>
                         <p class="text-sm uppercase tracking-wider text-white/60 mb-3">Fundadora | CRO BA 16810</p>
                         <p class="text-white/80 mb-4">Harmonização Facial e Ortodontia.</p>
-                        <a href="https://www.instagram.com/obe.odontologia" target="_blank" class="inline-flex items-center gap-2 text-sm text-brand-rose hover:text-white transition-colors">
-                            <i class="ph-fill ph-instagram-logo text-lg"></i> @obe.odontologia
+                        <a href="https://www.instagram.com/dralouisecamara/" target="_blank" class="inline-flex items-center gap-2 text-sm text-brand-rose hover:text-white transition-colors">
+                            <i class="ph-fill ph-instagram-logo text-lg"></i> @dralouisecamara
                         </a>
                     </div>
                 </div>
                 <!-- Dra Camila -->
                 <div class="bg-white/5 border border-white/10 rounded-3xl p-8 flex flex-col sm:flex-row items-center gap-8">
                     <div class="w-32 h-32 rounded-full overflow-hidden border-2 border-brand-rose flex-shrink-0">
-                        <img src="assets/img/team/camila.png" alt="Dra. Camila Magalhães" class="w-full h-full object-cover">
+                        <img src="assets/img/team/camila.jpg" alt="Dra. Camila Magalhães" class="w-full h-full object-cover">
                     </div>
                     <div>
                         <h3 class="font-serif text-2xl font-bold text-brand-rose mb-1">Dra. Camila Magalhães</h3>
                         <p class="text-sm uppercase tracking-wider text-white/60 mb-3">Fundadora | CRO BA 9608</p>
                         <p class="text-white/80 mb-4">Odontopediatria, Ortodontia Infantil e PCD (foco autistas).</p>
-                        <a href="https://www.instagram.com/obe.odontologia" target="_blank" class="inline-flex items-center gap-2 text-sm text-brand-gold hover:text-white transition-colors">
-                            <i class="ph-fill ph-instagram-logo text-lg"></i> @obe.odontologia
+                        <a href="https://www.instagram.com/dramilamagalhaes/" target="_blank" class="inline-flex items-center gap-2 text-sm text-brand-gold hover:text-white transition-colors">
+                            <i class="ph-fill ph-instagram-logo text-lg"></i> @dramilamagalhaes
                         </a>
                     </div>
                 </div>
@@ -1537,7 +1589,7 @@
                             <i class="ph-fill ph-map-pin text-2xl text-brand-gold"></i>
                             <div>
                                 <p class="font-bold text-brand-dark">Endereço</p>
-                                <p class="text-brand-muted text-sm mt-1">Av. Antônio Carlos Magalhães, 846<br>Itaigara, Salvador - BA, 41825-000<br>Edf. Max Center - Sala 242</p>
+                                <p class="text-brand-muted text-sm mt-1">Av. Antônio Carlos Magalhães, 826<br>Itaigara, Salvador - BA, 41825-000<br>Edf. Max Center - Sala 242</p>
                             </div>
                         </li>
                         <li class="flex items-start gap-4">
@@ -1682,7 +1734,7 @@
                 category: 'clinical',
                 categoryLabel: 'Clínico & Reabilitação',
                 icon: 'ph-activity',
-                short: 'Tratamento de disfunções temporomandibulares, bruxismo, desgaste dentário e dores articulares (liderado por Stefany).',
+                short: 'Tratamento de disfunções temporomandibulares, bruxismo, desgaste dentário e dores articulares.',
                 description: 'Diagnóstico e tratamento especializado para disfunções da ATM (articulação temporomandibular). Abordagem clínica completa para alívio de bruxismo (ranger ou apertar os dentes), estalos ao abrir a boca, desgastes dentários e dores na face ou cabeça.',
                 image: 'assets/img/clinica/clinica-6.jpg',
                 whatsappText: 'Olá! Gostaria de agendar uma consulta para tratamento de DTM/Bruxismo.'
@@ -1989,6 +2041,17 @@
         // Otimização de performance: iniciar o mais rápido possível
         document.addEventListener('DOMContentLoaded', () => {
             renderProcedures('all'); // Populate procedures grid
+
+            // Expandir Portfólio Resultados (Caso Antes e Depois)
+            const expandPortfolioBtn = document.getElementById('expand-portfolio');
+            const portfolioExpandContainer = document.getElementById('portfolio-expand-btn-container');
+            if (expandPortfolioBtn) {
+                expandPortfolioBtn.addEventListener('click', () => {
+                    const hiddenCards = document.querySelectorAll('.portfolio-card.hidden');
+                    hiddenCards.forEach(card => card.classList.remove('hidden'));
+                    if (portfolioExpandContainer) portfolioExpandContainer.style.display = 'none';
+                });
+            }
 
 
 
