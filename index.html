@@ -630,16 +630,15 @@
         <div class="absolute inset-0 bg-[#2A2522]/60 backdrop-blur-md" onclick="closeProcedureModal()"></div>
         <!-- Modal Content -->
         <div class="bg-white w-full max-w-2xl rounded-[40px] shadow-2xl relative z-10 max-h-[85vh] overflow-y-auto transform scale-95 opacity-0 transition-all duration-300 flex flex-col" id="modal-box">
-            <!-- Header Image -->
-            <div class="w-full h-56 md:h-64 relative overflow-hidden">
-                <img id="modal-image" src="" alt="" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent"></div>
-                <button onclick="closeProcedureModal()" class="absolute top-6 right-6 w-10 h-10 rounded-full bg-white/80 hover:bg-white flex items-center justify-center text-brand-dark shadow-md transition-all focus:outline-none" aria-label="Fechar modal">
-                    <i class="ph ph-x text-xl font-bold"></i>
-                </button>
-            </div>
+            <!-- Hidden Image reference to keep JS happy -->
+            <img id="modal-image" src="" alt="" class="hidden">
+            
+            <!-- Botão Fechar -->
+            <button onclick="closeProcedureModal()" class="absolute top-6 right-6 w-10 h-10 rounded-full bg-[#F5EDE4] hover:bg-brand-gold hover:text-white flex items-center justify-center text-brand-dark shadow-sm transition-all focus:outline-none z-20" aria-label="Fechar modal">
+                <i class="ph ph-x text-xl font-bold"></i>
+            </button>
             <!-- Body -->
-            <div class="p-8 md:p-10 flex-1">
+            <div class="p-8 md:p-10 flex-1 pt-16">
                 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-gold/30 bg-[#F5EDE4] mb-4">
                     <span class="w-2 h-2 rounded-full bg-brand-gold"></span>
                     <span id="modal-category-badge" class="text-[10px] uppercase tracking-widest font-bold text-brand-muted"></span>
@@ -810,6 +809,13 @@
                     <div class="relative aspect-square rounded-2xl overflow-hidden mb-6 gallery-rotator">
                         <img src="assets/img/harmonizacao-1.jpg" alt="Antes e Depois Harmonização Facial 1" class="gallery-img w-full h-full object-cover filter brightness-90 group-hover:brightness-100 transition-all duration-1000 opacity-100" loading="lazy">
                         <img src="assets/img/harmonizacao-2.jpg" alt="Antes e Depois Harmonização Facial 2" class="gallery-img absolute inset-0 w-full h-full object-cover object-left filter brightness-90 group-hover:brightness-100 transition-all duration-1000 opacity-0" loading="lazy">
+                        
+                        <!-- Indicadores de Slideshow (Bolinhas) -->
+                        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1.5 z-10 bg-black/45 px-2.5 py-1 rounded-full backdrop-blur-sm">
+                            <span class="dot-indicator w-3 h-1.5 rounded-full bg-white transition-all duration-300"></span>
+                            <span class="dot-indicator w-1.5 h-1.5 rounded-full bg-white/50 transition-all duration-300"></span>
+                        </div>
+
                         <div class="absolute top-3 left-3 z-10">
                             <span class="bg-black/40 px-3 py-1 rounded-full backdrop-blur-md text-[9px] font-bold uppercase tracking-wider text-white">Antes</span>
                         </div>
@@ -858,7 +864,7 @@
                 </div>
 
                 <!-- Caso 4: Perfiloplastia -->
-                <div class="portfolio-card group bg-white rounded-[32px] p-4 shadow-sm border border-brand-gold/10 hover:shadow-xl hover:border-brand-gold/30 transition-shadow transition-colors shimmer-card cursor-pointer hidden">
+                <div class="portfolio-card group bg-white rounded-[32px] p-4 shadow-sm border border-brand-gold/10 hover:shadow-xl hover:border-brand-gold/30 transition-shadow transition-colors shimmer-card cursor-pointer hidden md:block">
                     <div class="relative aspect-square rounded-2xl overflow-hidden mb-6">
                         <img src="assets/img/perfiloplastia.jpg" alt="Antes e Depois Perfiloplastia" class="w-full h-full object-cover filter brightness-90 group-hover:brightness-100 transition-all duration-500" loading="lazy">
                         <div class="absolute top-3 left-3">
@@ -875,7 +881,7 @@
                 </div>
 
                 <!-- Caso 5: Alinhador -->
-                <div class="portfolio-card group bg-white rounded-[32px] p-4 shadow-sm border border-brand-gold/10 hover:shadow-xl hover:border-brand-gold/30 transition-shadow transition-colors shimmer-card cursor-pointer hidden">
+                <div class="portfolio-card group bg-white rounded-[32px] p-4 shadow-sm border border-brand-gold/10 hover:shadow-xl hover:border-brand-gold/30 transition-shadow transition-colors shimmer-card cursor-pointer hidden md:block">
                     <div class="relative aspect-square rounded-2xl overflow-hidden mb-6">
                         <img src="assets/img/alinhador.jpg" alt="Antes e Depois Alinhador Invisível" class="w-full h-full object-cover filter brightness-90 group-hover:brightness-100 transition-all duration-500" loading="lazy">
                         <div class="absolute top-3 left-3">
@@ -892,11 +898,19 @@
                 </div>
 
                 <!-- Caso 6: Sorriso Gengival -->
-                <div class="portfolio-card group bg-white rounded-[32px] p-4 shadow-sm border border-brand-gold/10 hover:shadow-xl hover:border-brand-gold/30 transition-shadow transition-colors shimmer-card cursor-pointer hidden">
+                <div class="portfolio-card group bg-white rounded-[32px] p-4 shadow-sm border border-brand-gold/10 hover:shadow-xl hover:border-brand-gold/30 transition-shadow transition-colors shimmer-card cursor-pointer hidden md:block">
                     <div class="relative aspect-square rounded-2xl overflow-hidden mb-6 gallery-rotator">
                         <img src="assets/img/sorriso-gengival.jpg" alt="Antes e Depois Sorriso Gengival 1" class="gallery-img w-full h-full object-cover filter brightness-90 group-hover:brightness-100 transition-all duration-1000 opacity-100" loading="lazy">
                         <img src="assets/img/gengiva-1.jpg" alt="Antes e Depois Sorriso Gengival 2" class="gallery-img absolute inset-0 w-full h-full object-cover filter brightness-90 group-hover:brightness-100 transition-all duration-1000 opacity-0" loading="lazy">
                         <img src="assets/img/gengiva-2.jpg" alt="Antes e Depois Sorriso Gengival 3" class="gallery-img absolute inset-0 w-full h-full object-cover filter brightness-90 group-hover:brightness-100 transition-all duration-1000 opacity-0" loading="lazy">
+                        
+                        <!-- Indicadores de Slideshow (Bolinhas) -->
+                        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1.5 z-10 bg-black/45 px-2.5 py-1 rounded-full backdrop-blur-sm">
+                            <span class="dot-indicator w-3 h-1.5 rounded-full bg-white transition-all duration-300"></span>
+                            <span class="dot-indicator w-1.5 h-1.5 rounded-full bg-white/50 transition-all duration-300"></span>
+                            <span class="dot-indicator w-1.5 h-1.5 rounded-full bg-white/50 transition-all duration-300"></span>
+                        </div>
+
                         <div class="absolute top-3 left-3 z-10">
                             <span class="bg-black/40 px-3 py-1 rounded-full backdrop-blur-md text-[9px] font-bold uppercase tracking-wider text-white">Antes</span>
                         </div>
@@ -911,8 +925,8 @@
                 </div>
             </div>
 
-            <!-- Botão Expandir Resultados (Desktop e Mobile) -->
-            <div class="flex justify-center mt-12" id="portfolio-expand-btn-container">
+            <!-- Botão Expandir Resultados (Apenas Mobile) -->
+            <div class="flex justify-center mt-12 md:hidden" id="portfolio-expand-btn-container">
                 <button id="expand-portfolio" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full border border-brand-gold text-brand-gold font-bold text-xs uppercase tracking-widest hover:bg-brand-gold hover:text-white transition-all shadow-md group">
                     <span>Ver Mais Resultados</span>
                     <i class="ph ph-caret-down text-sm leading-none animate-bounce"></i>
@@ -2030,16 +2044,27 @@
                 if (imgs.length < 2) return;
                 
                 let activeIndex = 0;
+                const dots = rotator.querySelectorAll('.dot-indicator');
                 
                 // Alterna as imagens com transição de opacidade
                 const rotate = () => {
                     imgs[activeIndex].classList.remove('opacity-100');
                     imgs[activeIndex].classList.add('opacity-0');
                     
+                    if (dots.length > 0) {
+                        dots[activeIndex].classList.remove('bg-white', 'w-3');
+                        dots[activeIndex].classList.add('bg-white/50', 'w-1.5');
+                    }
+                    
                     activeIndex = (activeIndex + 1) % imgs.length;
                     
                     imgs[activeIndex].classList.remove('opacity-0');
                     imgs[activeIndex].classList.add('opacity-100');
+                    
+                    if (dots.length > 0) {
+                        dots[activeIndex].classList.remove('bg-white/50', 'w-1.5');
+                        dots[activeIndex].classList.add('bg-white', 'w-3');
+                    }
                 };
                 
                 // Define delays alternados (stagger) para não mudarem todas ao mesmo tempo
