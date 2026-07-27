@@ -5,7 +5,7 @@ const CLIENT_CONFIG = {
     name: "OBE Odontologia Básica e Especializada",
     shortName: "OBE",
     phone: "557196593529",
-    phoneFixo: "(71) 2886-1613",
+    phoneFixo: "(71) 3599-5970",
     whatsappUrl: "https://wa.me/557196593529?text=ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es",
     email: "obeodontologiabasica@gmail.com",
     address: "Av. Antônio Carlos Magalhães, 846 - Itaigara, Salvador - BA, 41825-000 (Edf. Max Center - sala 242)",
